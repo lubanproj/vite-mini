@@ -11,7 +11,7 @@ import { cachedRead } from "../utils";
 
 export const vuePlugin: Plugin = ({ root, app }) => {
     app.use(async(ctx, next) => {
-        if (!ctx.path.endsWith('.vue')) {
+        if (!ctx.path.endsWith('.vue')) {``
             return next();
         }
 
